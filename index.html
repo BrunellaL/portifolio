@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfólio Brunella Soares</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <!-- Página Principal -->
+    <div data-role="page" class="page" id="home">
+        
+        <!-- Header -->
+        <header>
+            <div class="header">
+                <div class="nav-up">
+                    <a href="#conhecimentos">Conhecimentos</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#depoimentos">Depoimentos</a>
+                    <a href="#contato">Contato</a>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Seção Sobre Mim -->
+        <section class="about-section" id="sobre">
+            <div class="about-container">
+                <img src="img/me.png" alt="Imagem de Perfil" class="profile-image" />
+                <div class="about-text">
+                    
+                    <h1>Olá!</h1>
+                    <p><b>Um pouco sobre mim: </b></p>
+                    <p>
+                        Sou desenvolvedora apaixonada por transformar ideias em código. Trabalho com tecnologias como
+                        HTML, CSS, JavaScript, PHP e mais, criando soluções web criativas e funcionais.
+                    </p>
+
+                    <div class="nav-links">
+                    <a href="#conhecimentos" class="circle conhecimento">
+                        <i class="fas fa-brain"></i>
+                        <span class="tooltip">Conhecimentos</span>
+                        
+                        <!--<span>Conhecimentos</span>-->
+                    </a>
+                    <a href="#projetos" class="circle projetos">
+                        <i class="fas fa-tools"></i>
+                        <span class="tooltip">Projetos</span>
+                        <!--<span>Projetos</span>-->
+                    </a>
+                    <a href="#depoimentos" class="circle depoimentos">
+                        <i class="fas fa-comments"></i>
+                        <span class="tooltip">Depoimentos</span>
+                        <!--<span>Depoimentos</span>-->
+                    </a>
+                    <a href="#contato" class="circle contato">
+                        <i class="fas fa-envelope"></i>
+                        <span class="tooltip">Contato</span>
+                        <!--<span>Contato</span>-->
+                    </a>
+                </div>
+
+                </div>
+            </div>
+
+    <!--Conhecimentos-->
+    <section class="skills-section" id="conhecimentos">
+    <h2>Conhecimentos</h2>
+    <div class="skills-container">
+        <div class="skill" data-tooltip="O HTML é a linguagem de marcação usada para estruturar conteúdo na web">
+            <img src="img/html.png" alt="HTML Icon">
+        </div>
+        
+        <div class="skill" data-tooltip="O CSS estiliza o layout e visual dos sites">
+            <img src="img/css.png" alt="CSS Icon"> 
+        </div>
+        
+        <div class="skill" data-tooltip="O JavaScript é a linguagem de programação que adiciona interatividade aos sites">
+            <img src="img/js.png" alt="JavaScript Icon">
+        </div>
+        
+        <div class="skill" data-tooltip="O PHP é a linguagem usada no back-end para criar sites dinâmicos">
+            <img src="img/php.png" alt="PHP Icon"> 
+        </div>
+
+        <div class="skill" data-tooltip="O MySQL é um sistema de gerenciamento de banco de dados usado no back-end para armazenar e organizar informações.">
+            <img src="img/mysql.png" alt="MySQL Icon"> 
+        </div>
+        
+        <div class="skill" data-tooltip="O JQuery é uma biblioteca JavaScript usada no front-end para simplificar a manipulação de elementos HTML, eventos e animações.">
+            <img src="img/jquery.png" alt="JQuery Icon"> 
+        </div>
+
+        <div class="skill" data-tooltip="O Figma é uma ferramenta de design usada no front-end do processo de criação para projetar interfaces e protótipos de forma colaborativa.">
+            <img src="img/figma.png" alt="Figma Icon"> 
+        </div>
+        <!-- Adicione outros conhecimentos aqui -->
+    </div>
+    </section>
+    <!--SEÇÃO PARA A IMAGEM-->
+    </section>
+    </div>
+
+        <!-- Projetos -->
+        <section class="projects-section" id="projetos">
+            <h2>Projetos</h2>
+        
+            <div class="projects-wrapper fade-slide">
+                <!-- Projeto 1 -->
+                <div class="project-row">
+                    <div class="project-image">
+                        <img src="img/pizza.png" alt="Pizzaria Nostra">
+                        <div class="overlay">
+                            <p>Landing page fictícia para uma pizzaria, criada para praticar HTML, CSS e JS.</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>PizzaNostra</h3>
+                        <p>
+                            Esse foi meu primeiro projeto em formato de landing page.
+                            Trabalhei bastante responsividade, organização do layout e identidade visual.
+                        </p>
+                        <a href="https://brunellal.github.io/pizzanostra/" target="_blank" class="btn">Ver Projeto</a>
+                    </div>
+                </div>
+        
+                <!-- Projeto 2 -->
+                <div class="project-row">
+                    <div class="project-image">
+                        <img src="img/pariss.png" alt="Paris">
+                        <div class="overlay">
+                            <p>Landing page moderna inspirada em Paris. Desenvolvida em HTML e CSS.</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Paris</h3>
+                        <p>
+                            Projeto criado para experimentar React e Node.js.
+                            Meu foco aqui foi performance, componentização e design clean.
+                        </p>
+                        <a href="https://brunellal.github.io/paris/" target="_blank" class="btn">Ver Projeto</a>
+                    </div>
+                </div>
+        
+                <!-- Projeto 3 -->
+                <div class="project-row">
+                    <div class="project-image">
+                        <img src="img/capixaba.png" alt="Capixaba">
+                        <div class="overlay">
+                            <p>Landing page moderna inspirada no estado do Espírito Santo. Desenvolvida em React e Node.js.</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Capixaba em Diversidade</h3>
+                        <p>
+                            Projeto criado para experimentar React e Node.js.
+                            Meu foco aqui foi performance, componentização e design clean.
+                        </p>
+                        <a href="https://681cfc55030e7.site123.me/" target="_blank" class="btn">Ver Projeto</a>
+                    </div>
+                </div>
+
+                <!-- Projeto 4 -->
+                <div class="project-row">
+                    <div class="project-image">
+                        <img src="img/abrilverde.png" alt="Abril Verde">
+                        <div class="overlay">
+                            <p>Landing page moderna para falar sobre o Abril Verde. Desenvolvida em HTML e CSS.</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Abril Verde</h3>
+                        <p>
+                            Projeto criado a partir do programa Wix.
+                            Meu foco aqui foi performance, detalhamento e inteface intuitiva.
+                        </p>
+                        <a href="https://safepointtt.wixsite.com/safepoint" target="_blank" class="btn">Ver Projeto</a>
+                    </div>
+                </div>
+            
+        <section class="ebook-section" id="ebook">
+            <h2>Baixe meu eBook</h2>
+            <p>O Ebook trata assuntos diversos como o Setembro Amarelo, saúde mental, depoimentos e histórias de pessoas, recursos de apoio. 
+                <br>Confira abaixo isso e muito mais. </p>
+            <a href="pdf/Ebook SetembroAmarelo-T343.pdf" download class="btn-download">📥 Baixar eBook</a>
+        </section>
+    </div>
+    </section>
+
+        <!-- Depoimentos -->
+        <section class="testimonials-section" id="depoimentos">
+            <h2>Depoimentos</h2>
+            <div class="testimonial">
+                <p>“A Brunella fez um trabalho incrível no nosso site. Entregou tudo no prazo com excelente qualidade.”</p>
+                <span>- Ana Clara</span>
+            </div>
+            <div class="testimonial">
+                <p>“Trabalhar com a Brunella foi uma experiência ótima. Muito profissional e atenciosa.”</p>
+                <span>- Carolaine Silva</span>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section class="contact-section" id="contato">
+            <h2>Entre em Contato</h2>
+            <form class="contact-form">
+                <input type="text" name="nome" placeholder="Seu Nome" required />
+                <input type="email" name="email" placeholder="Seu E-mail" required />
+                <textarea name="mensagem" rows="4" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        
+
+        <div class="social-links">
+            <a href="https://wa.me/5527997344103" target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://instagram.com/brunell4" target="_blank" class="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/brunella-lima-soares-80b4832b1" target="_blank" class="linkedin">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:brunellalimasoares@email.com" class="email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+</section>
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            <p>&copy; 2025 - Brunella Soares - Todos os direitos reservados</p>
+        </footer>
+
+    </div>
+
+<script>
+    // Habilita tooltips no toque (mobile)
+    document.querySelectorAll('.skill').forEach(skill => {
+        skill.addEventListener('click', function () {
+            // Remove tooltip dos outros
+            document.querySelectorAll('.skill').forEach(s => {
+                if (s !== this) s.classList.remove('show-tooltip');
+            });
+            // Alterna o tooltip clicado
+            this.classList.toggle('show-tooltip');
+        });
+    });
+
+    // Remove tooltip se clicar fora
+    document.addEventListener('click', function (e) {
+        if (!e.target.closest('.skill')) {
+            document.querySelectorAll('.skill').forEach(skill => {
+                skill.classList.remove('show-tooltip');
+            });
+        }
+    });
+</script>
+
+<!--PROJETOS-->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const fadeElements = document.querySelectorAll(".fade-slide");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                    observer.unobserve(entry.target); // evita reanimar várias vezes
+                }
+            });
+        }, { threshold: 0.2 }); // ativa quando 20% aparece na tela
+
+        fadeElements.forEach(el => observer.observe(el));
+    });
+</script>
+
+
+</body>
+</html>
