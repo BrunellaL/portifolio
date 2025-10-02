@@ -6,6 +6,8 @@ body {
     background-color: #f8f8f8;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    /* 🔥 isso corta scroll lateral */
 }
 
 /* ==========================
@@ -265,12 +267,9 @@ body {
 ========================== */
 .skills-section {
     margin-top: 180px;
-    /* espaço entre 'Sobre Mim' e 'Conhecimentos' */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     min-height: 10vh;
-    padding: 60px 200px;
+    padding: 60px 20px;
+    /* 🔥 troquei 200px por 20px */
     text-align: center;
 }
 
@@ -281,10 +280,10 @@ body {
 }
 
 .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 20px;
+    justify-items: center;
 }
 
 .skill {
@@ -686,19 +685,30 @@ body {
 /* ==========================
     RESPONSIVIDADE
 ========================== */
+
+/* Tablets e telas médias */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        /* 🔥 corta scroll lateral */
+    }
+
     .about-container {
         flex-direction: column;
         text-align: center;
+        padding: 15px;
     }
 
     .profile-image {
         width: 180px;
         margin-bottom: 20px;
+        max-width: 100%;
+        /* 🔥 garante que não estoure */
+        height: auto;
     }
 
-    .about-text h1,
-    .about-text p {
+    .about-text {
+        max-width: 100%;
         text-align: center;
     }
 
@@ -727,6 +737,20 @@ body {
         font-size: 1em;
     }
 
+    /* Conhecimentos corrigido */
+    .skills-section {
+        padding: 40px 15px;
+        /* 🔥 antes estava 200px */
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        /* 🔥 grid flexível */
+        gap: 20px;
+        justify-items: center;
+    }
+
     .projects-section h2,
     .testimonials-section h2,
     .contact-section h2 {
@@ -742,6 +766,7 @@ body {
     }
 }
 
+/* Celulares pequenos */
 @media (max-width: 480px) {
     .nav-links a {
         width: 80px;
@@ -758,6 +783,15 @@ body {
     }
 
     .project-card img {
-        height: 120px;
+        height: auto;
+        /* 🔥 melhor do que fixar 120px */
+        max-width: 100%;
     }
+}
+
+/* Ajuste geral para imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
